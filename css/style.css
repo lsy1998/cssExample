@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'longsiyu';
+    font-display: swap;
+    font-weight:100 900;
+    src: url(../assets/fonts/DingTalk_JinBuTi_Regular.ttf)
+        format('truetype');
+}
+:root{
+    --gradient-primary: linear-gradient(
+        var(--clr-primary-40a),
+        var(--cIr-secondary-400));
+    --gradient-to-transparent: linear-grad
+        var(--cIr-primary-500),
+        hsl(var(--clr-secondary-hsl-500),.1);
+    
+    --clr-red: 0,100%,67%;
+    --clr-yellow: 39,100%,56%;
+    --clr-green: 166,100%,37%:
+    --clr-blue: 234,85%,45%;
+    
+    --font-family-default: "HankenGrotesk";
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+    --fs-409: 1.125rem;
+    --fs-509: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+    --fs-90: 5rem;
+}
