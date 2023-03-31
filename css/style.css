@@ -1,31 +1,67 @@
 @font-face {
     font-family: 'longsiyu';
     font-display: swap;
-    font-weight:100 900;
-    src: url(../assets/fonts/DingTalk_JinBuTi_Regular.ttf)
-        format('truetype');
+    font-weight: 100 900;
+    src: url(../assets/fonts/DingTalk_JinBuTi_Regular.ttf) format('truetype');
 }
-:root{
-    --gradient-primary: linear-gradient(
-        var(--clr-primary-40a),
-        var(--cIr-secondary-400));
-    --gradient-to-transparent: linear-grad
-        var(--cIr-primary-500),
-        hsl(var(--clr-secondary-hsl-500),.1);
-    
-    --clr-red: 0,100%,67%;
-    --clr-yellow: 39,100%,56%;
-    --clr-green: 166,100%,37%:
-    --clr-blue: 234,85%,45%;
-    
-    --font-family-default: "HankenGrotesk";
+
+:root {
+    --clr-primary-hsl-400: 252, 100%, 67%;
+    --clr-primary-hsl-500: 256, 72%, 46%;
+    --clr-secondary-hsl-400: 241, 81%, 54%;
+    --clr-secondary-hsl-500: 241, 72%, 46%;
+
+    --clr-neutral-hsl-100: 0, 0%, 100%;
+    --clr-neutral-hsl-200: 221, 100%, 96%;
+    --clr-neutral-hsl-300: 241, 100%, 89%;
+    --clr-neutral-hsl-700: 224, 30%, 27%;
+
+    --crl-neutral-100: hsl(var(var(--clr-neutral-hsl-100)));
+    --crl-neutral-200: hsl(var(var(--clr-neutral-hsl-200)));
+    --crl-neutral-300: hsl(var(var(--clr-neutral-hsl-300)));
+    --crl-neutral-700: hsl(var(var(--clr-neutral-hsl-700)));
+
+    --crl-primary-400: hsl(var(var(--clr-primary-hsl-400)));
+    --crl-primary-500: hsl(var(var(--clr-primary-hsl-500)));
+    --crl-secondary-400: hsl(var(var(--clr-secondary-hsl-400)));
+    --crl-secondary-500: hsl(var(var(--clr-secondary-hsl-500)));
+
+    --gradient-primary: linear-gradient(var(--clr-primary-40a),
+            var(--cIr-secondary-400));
+    --gradient-to-transparent: linear-gradient(var(--cIr-primary-500),
+            hsl(var(--clr-secondary-hsl-500), .1));
+
+    --clr-accent-1: 0, 100%, 67%;
+    --clr-accent-2: 39, 100%, 56%;
+    --clr-accent-3: 166, 100%, 37%;
+    --clr-accent-4: 234, 85%, 45%;
+
+    --clr-red: 0, 100%, 67%;
+    --clr-yellow: 39, 100%, 56%;
+    --clr-green: 166, 100%, 37%;
+    --clr-blue: 234, 85%, 45%;
+
+    --font-family-default: "longsiyu";
+
     --fw-regular: 500;
     --fw-bold: 700;
     --fw-black: 800;
-    --fs-409: 1.125rem;
-    --fs-509: 1.25rem;
+
+    --fs-400: 1.125rem;
+    --fs-500: 1.25rem;
     --fs-600: 1.5rem;
     --fs-700: 1.75rem;
     --fs-800: 2rem;
-    --fs-90: 5rem;
+    --fs-900: 5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    font: inherit;
 }
